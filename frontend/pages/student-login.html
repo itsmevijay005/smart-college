@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login - Smart College</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+</head>
+<body>
+
+    <!-- Back Button (TOP LEFT) -->
+    <a href="../role.html" class="back-btn top-back">&larr; Back</a>
+
+    <!-- College Header (TOP CENTER) -->
+    <div class="college-header-centered">
+        <img src="../assets/images/logo.png" alt="College Logo">
+        <h2>Sir CR Reddy College of Engineering</h2>
+    </div>
+
+    <div class="container">
+        <div class="login-container">
+            <div class="header">
+                <h1>Student Login</h1>
+            </div>
+            
+            <form class="login-form" onsubmit="handleLogin(event, 'student')">
+                <div class="form-group">
+                    <label for="roll">Roll Number / ID:</label>
+                    <input type="text" id="roll" name="roll" required placeholder="Enter your roll number">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
+                </div>
+                
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                <p class="forgot-password"><a href="#">Forgot Password?</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

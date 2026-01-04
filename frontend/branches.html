@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Branch - Smart College</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- common header & back button styles -->
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body>
+
+    <!-- Back Button (TOP LEFT) -->
+    <a href="signin.html" class="back-btn top-back">&larr; Back</a>
+
+    <!-- College Header (TOP CENTER) -->
+    <div class="college-header-centered">
+        <img src="assets/images/logo.png" alt="College Logo">
+        <h2>Sir CR Reddy College of Engineering</h2>
+    </div>
+
+    <div class="container">
+        <div class="branches-container">
+            <div class="header">
+                <h1>Select Your Branch</h1>
+            </div>
+            
+            <div class="branches-grid">
+                <div class="branch-card" onclick="selectBranch('cse')">
+                    <img src="assets/images/branches/cse.png" alt="CSE">
+                    <h3>Computer Science & Engineering</h3>
+                    <p>CSE</p>
+                </div>
+                
+                <div class="branch-card" onclick="selectBranch('ece')">
+                    <img src="assets/images/branches/ece.png" alt="ECE">
+                    <h3>Electronics & Communication</h3>
+                    <p>ECE</p>
+                </div>
+                
+                <div class="branch-card" onclick="selectBranch('eee')">
+                    <img src="assets/images/branches/eee.png" alt="EEE">
+                    <h3>Electrical & Electronics</h3>
+                    <p>EEE</p>
+                </div>
+                
+                <div class="branch-card" onclick="selectBranch('civil')">
+                    <img src="assets/images/branches/civil.png" alt="Civil">
+                    <h3>Civil Engineering</h3>
+                    <p>CIVIL</p>
+                </div>
+                
+                <div class="branch-card" onclick="selectBranch('mech')">
+                    <img src="assets/images/branches/mech.png" alt="Mechanical">
+                    <h3>Mechanical Engineering</h3>
+                    <p>MECH</p>
+                </div>
+                
+                <div class="branch-card" onclick="selectBranch('it')">
+                    <img src="assets/images/branches/it.png" alt="IT">
+                    <h3>Information Technology</h3>
+                    <p>IT</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

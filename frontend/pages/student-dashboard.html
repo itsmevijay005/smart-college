@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Student Dashboard</title>
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dashboard.css">
+</head>
+
+<body>
+
+<!-- Back Button (TOP LEFT) -->
+<a class="back-btn top-back" href="student-login.html">← Back</a>
+
+<!-- Centered College Header (TOP CENTER) -->
+<div class="college-header-centered">
+  <img src="../assets/images/logo.png" alt="College Logo">
+  <h2>Sir CR Reddy College of Engineering</h2>
+</div>
+
+<!-- Header (Menu only) -->
+<header class="header">
+  <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+</header>
+
+<!-- Slide Menu -->
+<div class="side-menu" id="sideMenu">
+  <a href="profile.html">👤 Profile</a>
+  <a href="certification.html">📜 Certification</a>
+</div>
+
+<!-- Welcome Section -->
+<section class="welcome">
+  <h3>Welcome, Student [NAME]</h3>
+  <p>Branch: CSE | Semester: 5</p>
+</section>
+
+<!-- Dashboard Cards -->
+<section class="dashboard-container">
+
+  <div class="card results">
+    <h4>Results</h4>
+    <p>View marks & GPA</p>
+  </div>
+
+  <div class="card attendance">
+    <h4>Attendance</h4>
+    <p>Overall: 82%</p>
+  </div>
+
+  <div class="card library">
+    <h4>Library</h4>
+    <p>Books issued & due</p>
+  </div>
+
+  <div class="card timetable">
+    <h4>Timetable</h4>
+    <p>Today’s schedule</p>
+  </div>
+
+  <div class="card fee">
+    <h4>Fee Report</h4>
+    <p>Due: ₹10,000</p>
+  </div>
+
+  <div class="card exam">
+    <h4>Exam Management</h4>
+    <p>Upcoming exams</p>
+  </div>
+
+</section>
+
+<script>
+function toggleMenu() {
+  document.getElementById("sideMenu").classList.toggle("open");
+}
+</script>
+
+</body>
+</html>

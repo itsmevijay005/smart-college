@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Role - Smart College</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- reuse common header & back button styles -->
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body>
+
+    <!-- Back Button (TOP LEFT) -->
+    <a href="signin.html" class="back-btn top-back">&larr; Back</a>
+
+    <!-- College Header (TOP CENTER) -->
+    <div class="college-header-centered">
+        <img src="assets/images/logo.png" alt="College Logo">
+        <h2>Sir CR Reddy College of Engineering</h2>
+    </div>
+
+    <div class="container">
+        <div class="role-container">
+            <div class="header">
+                <h1>Select Your Role</h1>
+                <p class="branch-info" id="branchInfo"></p>
+            </div>
+            
+            <div class="roles-grid">
+                <div class="role-card" onclick="selectRole('student')">
+                    <div class="role-icon">🎓</div>
+                    <h3>Student</h3>
+                    <p>Access student portal</p>
+                </div>
+                
+                <div class="role-card" onclick="selectRole('staff')">
+                    <div class="role-icon">👨‍🏫</div>
+                    <h3>Staff / Faculty</h3>
+                    <p>Access staff portal</p>
+                </div>
+                
+                <div class="role-card" onclick="selectRole('admin')">
+                    <div class="role-icon">🔐</div>
+                    <h3>Administrator</h3>
+                    <p>Access admin portal</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

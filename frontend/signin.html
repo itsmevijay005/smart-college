@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Smart College</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="signin-container">
+            <div class="logo-small">
+                <img src="assets/images/logo.png" alt="Logo" class="logo-img">
+            </div>
+            <h1>Welcome</h1>
+            
+            <button class="btn btn-primary" onclick="goToBranches()">
+                <span>🎓</span> Student Login
+            </button>
+            
+            <button class="btn btn-secondary" onclick="goToBranches()">
+                <span>👨‍🏫</span> Staff Login
+            </button>
+            
+            <button class="btn btn-success" onclick="goToBranches()">
+                <span>🔐</span> Admin Login
+            </button>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+    <script>
+        function goToBranches() {
+            window.location.href = 'branches.html';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Certifications</title>
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dashboard.css">
+
+  <style>
+    .page-main {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    .cert-card {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+    }
+
+    .cert-card h2 {
+      margin-bottom: 16px;
+    }
+
+    .cert-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .cert-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px;
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+    }
+
+    .cert-item span {
+      font-size: 15px;
+    }
+
+    .download-btn {
+      padding: 6px 14px;
+      border: none;
+      border-radius: 6px;
+      background: #2563eb;
+      color: #ffffff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Back Button (TOP LEFT – same as dashboard) -->
+<a href="student-dashboard.html" class="back-btn top-back">← Back</a>
+
+<!-- Centered College Header (TOP CENTER) -->
+<div class="college-header-centered">
+  <img src="../assets/images/logo.png" alt="College Logo">
+  <h2>Sir CR Reddy College of Engineering</h2>
+</div>
+
+<!-- Certification Content -->
+<main class="page-main">
+  <div class="cert-card">
+    <h2>My Certifications</h2>
+
+    <div class="cert-list">
+      <div class="cert-item">
+        <span>Semesters Certificate</span>
+        <button class="download-btn">Download</button>
+      </div>
+
+      <div class="cert-item">
+        <span>Internship Certificate</span>
+        <button class="download-btn">Download</button>
+      </div>
+
+      <div class="cert-item">
+        <span>Course Completion Certificate</span>
+        <button class="download-btn">Download</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
